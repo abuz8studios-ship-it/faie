@@ -1,0 +1,9 @@
+0.00.725.834 W load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+0.00.725.840 W load: special_eom_id is not in special_eog_ids - the tokenizer config may be incorrect
+0.00.743.634 W llama_model_loader: tensor overrides to CPU are used with mmap enabled - consider using --no-mmap for better performance
+0.21.446.388 I 
+0.21.446.549 I system_info: n_threads = 20 (n_threads_batch = 20) / 32 | CUDA : ARCHS = 750,800,860,890,900,1200,1210 | USE_GRAPHS = 1 | BLACKWELL_NATIVE_FP4 = 1 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.21.446.704 I perplexity: tokenizing the input ..
+0.21.482.273 I perplexity: tokenization took 35.565 ms
+0.21.482.494 I perplexity: calculating perplexity over 12 chunks, n_ctx=4096, batch_size=4096, n_seq=1
+16.72 minutes

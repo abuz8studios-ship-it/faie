@@ -1,0 +1,86 @@
+model   : E:\ABU\MODELS\llm\glm-5.2-ream\GLM-5.2-REAM-Q2_K.gguf
+imatrix : E:\ABU\NEOCORTEX\corpus\im_calib_workload.gguf
+imatrix D vectors loaded: 225 MoE tensors
+
+=== layer 3 ===
+    gate: analysing (Q2_K)
+      expert 32/128  (14s)
+      expert 64/128  (29s)
+      expert 96/128  (46s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L3.gate: raw rank@95=5263  WHITENED rank@95=4125  mean-energy=0.008  per-expert rank@95=[1398, 1499, 1513, 1506]
+    up: analysing (Q2_K)
+      expert 32/128  (17s)
+      expert 64/128  (31s)
+      expert 96/128  (47s)
+      expert 128/128  (63s)
+      accumulated in 63s
+    -> L3.up: raw rank@95=5264  WHITENED rank@95=4132  mean-energy=0.008  per-expert rank@95=[663, 1540, 1442, 1648]
+    down: analysing (Q3_K)
+      expert 32/128  (24s)
+      expert 64/128  (47s)
+      expert 96/128  (74s)
+      expert 128/128  (98s)
+      accumulated in 98s
+    -> L3.down: raw rank@95=5599  WHITENED rank@95=5532  mean-energy=0.008  per-expert rank@95=[1602, 1475, 1396, 1145]
+
+=== layer 40 ===
+    gate: analysing (Q2_K)
+      expert 32/128  (16s)
+      expert 64/128  (31s)
+      expert 96/128  (46s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L40.gate: raw rank@95=5646  WHITENED rank@95=5589  mean-energy=0.009  per-expert rank@95=[1688, 1669, 1683, 1645]
+    up: analysing (Q2_K)
+      expert 32/128  (16s)
+      expert 64/128  (29s)
+      expert 96/128  (46s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L40.up: raw rank@95=5655  WHITENED rank@95=5599  mean-energy=0.008  per-expert rank@95=[1685, 1675, 1693, 1687]
+    down: analysing (Q3_K)
+      expert 32/128  (24s)
+      expert 64/128  (49s)
+      expert 96/128  (73s)
+      expert 128/128  (96s)
+      accumulated in 96s
+    -> L40.down: raw rank@95=5640  WHITENED rank@95=5636  mean-energy=0.008  per-expert rank@95=[1656, 1687, 1662, 1664]
+
+=== layer 77 ===
+    gate: analysing (Q2_K)
+      expert 32/128  (19s)
+      expert 64/128  (32s)
+      expert 96/128  (48s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L77.gate: raw rank@95=5661  WHITENED rank@95=5550  mean-energy=0.011  per-expert rank@95=[1682, 1655, 1675, 1666]
+    up: analysing (Q2_K)
+      expert 32/128  (14s)
+      expert 64/128  (31s)
+      expert 96/128  (46s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L77.up: raw rank@95=5670  WHITENED rank@95=5562  mean-energy=0.008  per-expert rank@95=[1688, 1654, 1681, 1658]
+    down: analysing (Q3_K)
+      expert 32/128  (28s)
+      expert 64/128  (56s)
+      expert 96/128  (85s)
+      expert 128/128  (113s)
+      accumulated in 113s
+    -> L77.down: raw rank@95=5466  WHITENED rank@95=5308  mean-energy=0.008  per-expert rank@95=[1670, 1658, 1664, 1643]
+
+=== VERDICT TABLE (rank@95%: raw vs data-metric) ===
+  L3.gate  raw  5263  whitened  4125  share@1024 0.677
+  L3.up    raw  5264  whitened  4132  share@1024 0.676
+  L3.down  raw  5599  whitened  5532  share@1024 0.328
+  L40.gate  raw  5646  whitened  5589  share@1024 0.292
+  L40.up    raw  5655  whitened  5599  share@1024 0.286
+  L40.down  raw  5640  whitened  5636  share@1024 0.261
+  L77.gate  raw  5661  whitened  5550  share@1024 0.304
+  L77.up    raw  5670  whitened  5562  share@1024 0.297
+  L77.down  raw  5466  whitened  5308  share@1024 0.435
+
+wrote E:\ABU\NEOCORTEX\expert_basis_v2.json
+NOTE: weights-under-a-metric only. Behavior is judged by llama.cpp on a patched GGUF, never here.

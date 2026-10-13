@@ -1,0 +1,88 @@
+reading E:\ABU\MODELS\llm\glm-5.2-ream\GLM-5.2-REAM-Q2_K.gguf
+
+=== layer 3 ===
+    gate: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (9s)
+      expert 64/128  (18s)
+      expert 96/128  (28s)
+      expert 128/128  (37s)
+      accumulated in 37s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0209 -> OK
+    up: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (10s)
+      expert 64/128  (21s)
+      expert 96/128  (31s)
+      expert 128/128  (41s)
+      accumulated in 41s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0311 -> OK
+    down: 128 experts of 6144x2048 (Q3_K), shared 6144-axis = rows
+      expert 32/128  (11s)
+      expert 64/128  (23s)
+      expert 96/128  (34s)
+      expert 128/128  (45s)
+      accumulated in 45s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0442 -> OK
+    -> gate: feature rank@95% = 5263/6144, expert rank@95% = 115/128
+    -> up: feature rank@95% = 5264/6144, expert rank@95% = 115/128
+    -> down: feature rank@95% = 5599/6144, expert rank@95% = 116/128
+
+=== layer 40 ===
+    gate: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (11s)
+      expert 64/128  (33s)
+      expert 96/128  (47s)
+      expert 128/128  (60s)
+      accumulated in 60s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0391 -> OK
+    up: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (13s)
+      expert 64/128  (26s)
+      expert 96/128  (38s)
+      expert 128/128  (51s)
+      accumulated in 51s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0360 -> OK
+    down: 128 experts of 6144x2048 (Q3_K), shared 6144-axis = rows
+      expert 32/128  (14s)
+      expert 64/128  (28s)
+      expert 96/128  (41s)
+      expert 128/128  (54s)
+      accumulated in 54s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0329 -> OK
+    -> gate: feature rank@95% = 5646/6144, expert rank@95% = 117/128
+    -> up: feature rank@95% = 5655/6144, expert rank@95% = 117/128
+    -> down: feature rank@95% = 5640/6144, expert rank@95% = 117/128
+
+=== layer 77 ===
+    gate: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (12s)
+      expert 64/128  (25s)
+      expert 96/128  (38s)
+      expert 128/128  (50s)
+      accumulated in 50s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0338 -> OK
+    up: 128 experts of 2048x6144 (Q2_K), shared 6144-axis = cols
+      expert 32/128  (12s)
+      expert 64/128  (24s)
+      expert 96/128  (36s)
+      expert 128/128  (48s)
+      accumulated in 48s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0417 -> OK
+    down: 128 experts of 6144x2048 (Q3_K), shared 6144-axis = rows
+      expert 32/128  (13s)
+      expert 64/128  (26s)
+      expert 96/128  (39s)
+      expert 128/128  (52s)
+      accumulated in 52s
+      sketch validation on 12 exact pairs: max |cos_exact - cos_sketch| = 0.0350 -> OK
+    -> gate: feature rank@95% = 5661/6144, expert rank@95% = 119/128
+    -> up: feature rank@95% = 5670/6144, expert rank@95% = 119/128
+    -> down: feature rank@95% = 5466/6144, expert rank@95% = 118/128
+
+=== implied budget (feature-space basis only, 95% energy) ===
+  mean measured rank   r= 5540.4  compression  1.08x  75 layers @1.58bpw =  61.52 GB
+  worst measured rank  r= 5670.0  compression  1.06x  75 layers @1.58bpw =  62.96 GB
+  (today, independent experts @1.58bpw = 73.5 GB)
+
+wrote E:\ABU\NEOCORTEX\expert_basis.json
+
+NOTE: this measures WEIGHT redundancy only. It does not prove a reconstructed model generates correctly -- that is the next test.

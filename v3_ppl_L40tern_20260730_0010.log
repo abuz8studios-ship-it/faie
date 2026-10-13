@@ -1,0 +1,3 @@
+0.01.441.762 W load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+0.01.441.767 W load: special_eom_id is not in special_eog_ids - the tokenizer config may be incorrect
+0.01.458.633 W llama_model_loader: tensor overrides to CPU are used with mmap enabled - consider using --no-mmap for better performance

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-07-26 01:49:02",
+  "within_mean": 0.545829709619685,
+  "across_mean": 0.3840271825589236,
+  "ratio": 1.421330922417022,
+  "domain_union_sizes": {
+    "arabic_mercy": 3754,
+    "arabic_knowledge": 4316,
+    "code": 5324,
+    "finance": 4802
+  },
+  "all_union": 7322,
+  "total_experts": 9600,
+  "semantic_routing": true,
+  "working_set_fits_vram": false
+}

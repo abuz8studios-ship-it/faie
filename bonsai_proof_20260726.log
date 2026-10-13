@@ -1,0 +1,39 @@
+--no-conversation is not supported by llama-cli
+please use llama-completion instead
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-7529fda
+model      : Ternary-Bonsai-27B-Q2_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> What is 17*23? Answer with just the number.
+
+[Start thinking]
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - Question: "What is 17*23?"
+   - Constraint: "Answer with just the number."
+
+2.  **
+
+[ Prompt: 266.7 t/s | Generation: 130.5 t/s ]
+

@@ -1,0 +1,170 @@
+[
+  {
+    "rope": "neox",
+    "sscale": 4.0,
+    "rscale": 1.0,
+    "rank": 69775,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "64",
+      "6",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "neox",
+    "sscale": 1.0,
+    "rscale": 1.0,
+    "rank": 70223,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "64",
+      "6",
+      "74"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 1.0,
+    "rscale": 1.0,
+    "rank": 70374,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "64",
+      "6",
+      "74"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 4.0,
+    "rscale": 1.0,
+    "rank": 70585,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "64",
+      "6",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 16.0,
+    "rscale": 1.0,
+    "rank": 71479,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "64",
+      "uite",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "neox",
+    "sscale": 16.0,
+    "rscale": 1.0,
+    "rank": 72790,
+    "overlap": 0,
+    "top5": [
+      "abee",
+      "vt",
+      "uite",
+      "64",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "neox",
+    "sscale": 4.0,
+    "rscale": 2.5,
+    "rank": 100924,
+    "overlap": 0,
+    "top5": [
+      "vt",
+      "6",
+      "trenches",
+      "hyper",
+      "pen"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 4.0,
+    "rscale": 2.5,
+    "rank": 101554,
+    "overlap": 0,
+    "top5": [
+      "vt",
+      "6",
+      "trenches",
+      "hyper",
+      "pen"
+    ]
+  },
+  {
+    "rope": "neox",
+    "sscale": 16.0,
+    "rscale": 2.5,
+    "rank": 101944,
+    "overlap": 0,
+    "top5": [
+      "6",
+      "vt",
+      "3",
+      "4",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "neox",
+    "sscale": 1.0,
+    "rscale": 2.5,
+    "rank": 102819,
+    "overlap": 0,
+    "top5": [
+      "vt",
+      "6",
+      "3",
+      "64",
+      "4"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 16.0,
+    "rscale": 2.5,
+    "rank": 103449,
+    "overlap": 0,
+    "top5": [
+      "6",
+      "vt",
+      "4",
+      "3",
+      "Stored"
+    ]
+  },
+  {
+    "rope": "gptj",
+    "sscale": 1.0,
+    "rscale": 2.5,
+    "rank": 103520,
+    "overlap": 0,
+    "top5": [
+      "vt",
+      "6",
+      "64",
+      "3",
+      "\u5c42\u5c42"
+    ]
+  }
+]

@@ -1,0 +1,109 @@
+FAIE Conversion started at 2026-07-26 01:43:32
+PID: 34208
+======================================================================
+======================================================================
+  FAIE FULL MODEL CONVERSION
+  Source: E:\ABU\MODELS\llm\glm-5.2-ream\GLM-5.2-REAM-Q2_K.gguf
+  Output: E:\ABU\NEOCORTEX\faie_model
+======================================================================
+
+  Loading GGUF reader (memory-mapped)...
+  MoE layers: 3-77 (75 layers)
+  Experts per layer: 128
+  Total experts to convert: 9,600
+
+  Layer  3 (1/75)... SKIP (already done)
+
+  Layer  4 (2/75)... SKIP (already done)
+
+  Layer  5 (3/75)... SKIP (already done)
+
+  Layer  6 (4/75)... SKIP (already done)
+
+  Layer  7 (5/75)... SKIP (already done)
+
+  Layer  8 (6/75)... SKIP (already done)
+
+  Layer  9 (7/75)... SKIP (already done)
+
+  Layer 10 (8/75)... SKIP (already done)
+
+  Layer 11 (9/75)... SKIP (already done)
+
+  Layer 12 (10/75)... SKIP (already done)
+
+  Layer 13 (11/75)... SKIP (already done)
+
+  Layer 14 (12/75)... SKIP (already done)
+
+  Layer 15 (13/75)... SKIP (already done)
+
+  Layer 16 (14/75)... SKIP (already done)
+
+  Layer 17 (15/75)... SKIP (already done)
+
+  Layer 18 (16/75)... SKIP (already done)
+
+  Layer 19 (17/75)... SKIP (already done)
+
+  Layer 20 (18/75)... SKIP (already done)
+
+  Layer 21 (19/75)... SKIP (already done)
+
+  Layer 22 (20/75)... SKIP (already done)
+
+  Layer 23 (21/75)... SKIP (already done)
+
+  Layer 24 (22/75)... SKIP (already done)
+
+  Layer 25 (23/75)... SKIP (already done)
+
+  Layer 26 (24/75)... SKIP (already done)
+
+  Layer 27 (25/75)... SKIP (already done)
+
+  Layer 28 (26/75)... 1440.0 MB, sparsity gate=51% down=56%, 267s (ETA: 107m)
+
+  Layer 29 (27/75)... 1440.0 MB, sparsity gate=51% down=59%, 406s (ETA: 156m)
+
+  Layer 30 (28/75)... 1440.0 MB, sparsity gate=51% down=59%, 433s (ETA: 159m)
+
+  Layer 31 (29/75)... 1440.0 MB, sparsity gate=51% down=59%, 403s (ETA: 141m)
+
+  Layer 32 (30/75)... 1440.0 MB, sparsity gate=51% down=59%, 421s (ETA: 140m)
+
+  Layer 33 (31/75)... 1440.0 MB, sparsity gate=51% down=59%, 411s (ETA: 130m)
+
+  Layer 34 (32/75)... 1440.0 MB, sparsity gate=51% down=59%, 400s (ETA: 120m)
+
+  Layer 35 (33/75)... 1440.0 MB, sparsity gate=51% down=59%, 404s (ETA: 115m)
+
+  Layer 36 (34/75)... 1440.0 MB, sparsity gate=51% down=59%, 407s (ETA: 109m)
+
+  Layer 37 (35/75)... 1440.0 MB, sparsity gate=51% down=59%, 396s (ETA: 99m)
+
+  Layer 38 (36/75)... 1440.0 MB, sparsity gate=51% down=59%, 401s (ETA: 93m)
+
+  Layer 39 (37/75)... 1440.0 MB, sparsity gate=51% down=59%, 438s (ETA: 95m)
+
+  Layer 40 (38/75)...
+FATAL ERROR: Unable to allocate 12.0 MiB for an array with shape (12582912,) and data type bool
+Traceback (most recent call last):
+  File "E:\ABU\NEOCORTEX\run_conversion.py", line 36, in <module>
+    success = convert_full_model()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "E:\ABU\NEOCORTEX\faie_convert.py", line 231, in convert_full_model
+    meta = convert_layer(reader, layer_idx, OUTPUT_DIR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ABU\NEOCORTEX\faie_convert.py", line 157, in convert_layer
+    result = convert_expert(reader, layer_idx, exp_idx, layer_dir)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ABU\NEOCORTEX\faie_convert.py", line 77, in convert_expert
+    q_up = TernaryCompressor.quantize(up_f32, group_size=GROUP_SIZE)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ABU\NEOCORTEX\faie.py", line 118, in quantize
+    sparsity = np.mean(ternary_flat == 0)
+                       ^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 12.0 MiB for an array with shape (12582912,) and data type bool
+
+Finished at 2026-07-26 03:07:06

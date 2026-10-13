@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-26 01:51:15",
+  "profile_distinct": 5647,
+  "total_picks": 70800,
+  "experts_for_90pct": 2727,
+  "experts_for_99pct": 4939,
+  "coverage": {
+    "250": 0.25501412429378534,
+    "500": 0.4161864406779661,
+    "1000": 0.6203248587570621,
+    "1500": 0.7440677966101695,
+    "2000": 0.8251553672316384,
+    "3000": 0.9195762711864407
+  },
+  "preloaded": 1503,
+  "resident": 1503,
+  "heldout_tps": 36.921,
+  "heldout_residency": 55.514,
+  "offdomain_tps": 37.383,
+  "offdomain_residency": 47.173
+}

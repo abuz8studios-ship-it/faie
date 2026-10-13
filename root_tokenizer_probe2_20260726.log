@@ -1,0 +1,10 @@
+=== POSITION COUNT — three honest variants of the SAME Arabic text ===
+  A_diacritized             2009 words ->  15376 tokens =  7.65 tok/word   (1.06 chars/token)
+  B_diacritics_stripped     2009 words ->   5546 tokens =  2.76 tok/word   (1.55 chars/token)
+  C_stripped_normalised     2009 words ->   4609 tokens =  2.29 tok/word   (1.86 chars/token)
+
+  isolated single words (normalised, n=60): mean 2.72 tokens/word  (min 1, max 5)
+
+  -> This mean is the number of trained sequence positions ONE adapter vector would have to stand in for.
+
+wrote E:\ABU\NEOCORTEX\root_tokenizer_probe2.json

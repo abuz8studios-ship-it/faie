@@ -1,0 +1,15 @@
+=== (1) POSITION COUNT — what one injected vector would have to replace ===
+  Arabic :  2009 words ->  15376 tokens = 7.65 tokens/word   (1.06 chars/token)
+  English:    45 words ->     53 tokens = 1.18 tokens/word   (3.94 chars/token)
+  -> Arabic tokenizer tax 3.72x; one adapter vector would replace 7.65 trained positions per word.
+
+=== (2) ROOT SIGNAL IN THE TOKEN STREAM ===
+  roots with >= 6 distinct forms: 571;  sampling 40
+  mean token-set Jaccard, SAME root  : 0.4481  (n=600)
+  mean token-set Jaccard, DIFF roots : 0.1681  (n=780)
+  ratio (same / diff)                : 2.67x
+  mean tokens per isolated surface form: 7.57
+
+  VERDICT: tokenizer ALREADY carries strong root signal -> a root adapter adds little new semantics; its honest win is sequence length
+
+wrote E:\ABU\NEOCORTEX\root_tokenizer_probe.json

@@ -1,0 +1,26 @@
+{
+  "A_diacritized": {
+    "words": 2009,
+    "tokens": 15376,
+    "tokens_per_word": 7.653558984569438,
+    "chars_per_token": 1.0595083246618107
+  },
+  "B_diacritics_stripped": {
+    "words": 2009,
+    "tokens": 5546,
+    "tokens_per_word": 2.7605774016923843,
+    "chars_per_token": 1.5454381536242336
+  },
+  "C_stripped_normalised": {
+    "words": 2009,
+    "tokens": 4609,
+    "tokens_per_word": 2.294176207068193,
+    "chars_per_token": 1.8596224777609025
+  },
+  "isolated_words_normalised": {
+    "n": 60,
+    "mean_tokens": 2.716666666666667,
+    "min": 1,
+    "max": 5
+  }
+}

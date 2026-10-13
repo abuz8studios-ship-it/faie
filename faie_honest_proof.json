@@ -1,0 +1,49 @@
+{
+  "timestamp_edt": "2026-07-25 19:21:39",
+  "page_ms_per_expert": 8.022,
+  "cache_cap": 1503,
+  "resident_pct_of_model": 15.66,
+  "experts_total_gb": 122.2,
+  "vram_total_gb": 31.8,
+  "A_resident": {
+    "label": "fixed token",
+    "tps": 31.757,
+    "ms_per_tok": 31.489,
+    "residency_pct": 100.0,
+    "experts_paged": 0
+  },
+  "B_warm": [
+    {
+      "label": "warm seed 2500",
+      "tps": 1.777,
+      "ms_per_tok": 562.799,
+      "residency_pct": 87.593,
+      "experts_paged": 1861
+    },
+    {
+      "label": "warm seed 33000",
+      "tps": 1.414,
+      "ms_per_tok": 707.341,
+      "residency_pct": 80.267,
+      "experts_paged": 2960
+    }
+  ],
+  "C_cold": [
+    {
+      "label": "cold seed 7777",
+      "tps": 1.651,
+      "ms_per_tok": 605.812,
+      "residency_pct": 81.92,
+      "experts_paged": 2712
+    },
+    {
+      "label": "cold seed 101010",
+      "tps": 1.374,
+      "ms_per_tok": 727.714,
+      "residency_pct": 78.42,
+      "experts_paged": 3237
+    }
+  ],
+  "proven_compute_tps": 31.757,
+  "proven_at_full_residency": true
+}

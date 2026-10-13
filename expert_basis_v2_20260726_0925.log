@@ -1,0 +1,16 @@
+model   : E:\ABU\MODELS\llm\glm-5.2-ream\GLM-5.2-REAM-Q2_K.gguf
+imatrix : E:\ABU\NEOCORTEX\corpus\im_calib_workload.gguf
+imatrix D vectors loaded: 225 MoE tensors
+
+=== layer 3 ===
+    gate: analysing (Q2_K)
+    !! L3.gate: no imatrix entry -> whitened spectrum will be SKIPPED
+      expert 32/128  (14s)
+      expert 64/128  (30s)
+      expert 96/128  (47s)
+      expert 128/128  (62s)
+      accumulated in 62s
+    -> L3.gate: raw rank@95=5263  (no whitening)  mean-energy=0.008  per-expert rank@95=[1398, 1499, 1513, 1506]
+    up: analysing (Q2_K)
+    !! L3.up: no imatrix entry -> whitened spectrum will be SKIPPED
+      expert 32/128  (18s)

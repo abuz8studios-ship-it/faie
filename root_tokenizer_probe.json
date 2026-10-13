@@ -1,0 +1,14 @@
+{
+  "tokens_per_word_arabic": 7.653558984569438,
+  "tokens_per_word_english": 1.1777777777777778,
+  "chars_per_token_arabic": 1.0595083246618107,
+  "chars_per_token_english": 3.943396226415094,
+  "tokenizer_tax": 3.721911508032563,
+  "roots_sampled": 40,
+  "forms_per_root": 6,
+  "jaccard_same_root": 0.4481055888555902,
+  "jaccard_diff_root": 0.16809154342808247,
+  "ratio": 2.6658425505344416,
+  "tokens_per_isolated_form": 7.566666666666666,
+  "verdict": "tokenizer ALREADY carries strong root signal -> a root adapter adds little new semantics; its honest win is sequence length"
+}
